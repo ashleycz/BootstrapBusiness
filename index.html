@@ -1,39 +1,118 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title>Bootstrap Example</title>
+	  <title> Modified Bootstrap Example</title>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	  <style>
-	  body {
-		  position: relative;
-	  }
-	  
-	 .pageSection{
-		padding-top:50px;
-		min-height:100vh;
-		color: #fff;
-	  }
-	  
-	  .nav li a{
-		color: red;
-		-webkit-transition: color 0.3s ease;
-		-moz-transistion: color 0.3s ease;
-		transition: color 0.3s ease;
-	  }
-	  
-	  .nav li a:hover{
-		color: blue;
-	  }
-	  
-	  #section1 {background-color: #1E88E5;}
-	  #section2 {background-color: #673ab7;}
-	  #section3 {background-color: #ff9800;}
-	  #section41 {background-color: #00bcd4;}
-	  #section42 {background-color: #009688;}
+		  body {
+			  position: relative;
+		  }
+		  
+		 .pageSection{
+			position: relative;
+			padding-top: 50px;
+			min-height: 100vh;
+			color: #fff;
+		  }
+		  
+		  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+			
+		  }
+		  
+		  .dropdown-menu{
+			background-color: #222222;
+		  }
+		  
+		  .nav li a{
+			background-color: #222222;
+			color: red;
+			-webkit-transition: color 0.3s ease;
+			-moz-transistion: color 0.3s ease;
+			transition: color 0.3s ease;
+		  }
+		  
+		  .nav li a:hover, .nav li a:active, .dropdown-menu>.active>a{
+			background-color: #080808;
+			color: white;
+		  }
+		#section1 {
+			background-color: rgba(8,8,8,0.7);
+		} 
+		
+		#section1>.video-bg-content {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);
+			-moz-transform: translateX(-50%) translateY(-50%);
+			transform: translateX(-50%) translateY(-50%);
+			padding: 5px;
+			text-align: center;
+			background-color: rgba(30,136,229,0.7);
+			border: 2px solid blue;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+		}
+		  #section2 {background-color: #673ab7;}
+		  #section3 {background-color: #ff9800;}
+		  #section41 {background-color: #00bcd4;}
+		  #section42 {background-color: #009688;}
+		  
+		  .fullscreen-bg {
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				overflow: hidden;
+				z-index: -100;
+			}
+
+			.fullscreen-bg>video {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: auto;
+				height: auto;
+				min-width: 100%;
+				min-height: 100%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-ms-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+			}
+			
+			@media (min-aspect-ratio: 16/9) {
+			  .fullscreen-bg__video {
+				width: 100%;
+				height: auto;
+			  }
+			}
+
+			@media (max-aspect-ratio: 16/9) {
+			  .fullscreen-bg__video {
+				width: auto;
+				height: 100%;
+			  }
+			}
+
+			@media (max-width: 767px) {
+				.fullscreen-bg {
+					background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
+				}
+
+				.fullscreen-bg__video {
+					display: none;
+				}
+			}
 	  </style>
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -67,14 +146,22 @@
 		</nav>
 
 		<div id="section1" class="container-fluid pageSection">
-		  <h1>Section 1</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<!--video bg format and styling from http://slicejack.com/fullscreen-html5-video-background-css/ -->
+			<div class="fullscreen-bg">
+				<video loop="loop" autoplay="autoplay" class="fullscreen-bg__video">
+					<source src="../video/you_reposted.mp4" type="video/mp4"> <!-- https://www.youtube.com/watch?v=pxIofYrt0kE -->
+				</video>
+			</div>
+			<div class='video-bg-content'>
+				<h1>Section 1</h1>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			</div>
 		</div>
 		<div id="section2" class="container-fluid pageSection">
-		  <h1>Section 2</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<h1>Section 2</h1>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 		</div>
 		<div id="section3" class="container-fluid pageSection">
 		  <h1>Section 3</h1>
