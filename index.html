@@ -1,123 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	  <title> Modified Bootstrap Example</title>
+	  <title> | Phillips Diner</title>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="shortcut icon" href="pics/vector.png" />
+	  <link rel="stylesheet" type="text/css" href="css/content-tools.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Kaushan+Script|Leckerli+One|Marck+Script|Mr+Dafoe|Norican|Pacifico|Satisfy" rel="stylesheet">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	  <style>
-		  body {
-			  position: relative;
-		  }
-		  
-		 .pageSection{
-			position: relative;
-			padding-top: 50px;
-			min-height: 100vh;
-			color: #fff;
-		  }
-		  
-		  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
-			
-		  }
-		  
-		  .dropdown-menu{
-			background-color: #222222;
-		  }
-		  
-		  .nav li a{
-			background-color: #222222;
-			color: red;
-			-webkit-transition: color 0.3s ease;
-			-moz-transistion: color 0.3s ease;
-			transition: color 0.3s ease;
-		  }
-		  
-		  .nav li a:hover, .nav li a:active, .dropdown-menu>.active>a{
-			background-color: #080808;
-			color: white;
-		  }
-		#section1 {
-			background-color: rgba(8,8,8,0.7);
-		} 
-		
-		#section1>.video-bg-content {
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			-webkit-transform: translateX(-50%) translateY(-50%);
-			-moz-transform: translateX(-50%) translateY(-50%);
-			transform: translateX(-50%) translateY(-50%);
-			padding: 5px;
-			text-align: center;
-			background-color: rgba(30,136,229,0.7);
-			border: 2px solid blue;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
-		}
-		  #section2 {background-color: #673ab7;}
-		  #section3 {background-color: #ff9800;}
-		  #section41 {background-color: #00bcd4;}
-		  #section42 {background-color: #009688;}
-		  
-		  .fullscreen-bg {
-				position: fixed;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				overflow: hidden;
-				z-index: -100;
-			}
-
-			.fullscreen-bg>video {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				width: auto;
-				height: auto;
-				min-width: 100%;
-				min-height: 100%;
-				-webkit-transform: translate(-50%, -50%);
-				-moz-transform: translate(-50%, -50%);
-				-ms-transform: translate(-50%, -50%);
-				transform: translate(-50%, -50%);
-			}
-			
-			@media (min-aspect-ratio: 16/9) {
-			  .fullscreen-bg__video {
-				width: 100%;
-				height: auto;
-			  }
-			}
-
-			@media (max-aspect-ratio: 16/9) {
-			  .fullscreen-bg__video {
-				width: auto;
-				height: 100%;
-			  }
-			}
-
-			@media (max-width: 767px) {
-				.fullscreen-bg {
-					background: url('http://dev2.slicejack.com/fullscreen-video-demo/img/videoframe.jpg') center center / cover no-repeat;
-				}
-
-				.fullscreen-bg__video {
-					display: none;
-				}
-			}
-	  </style>
+	  <link rel="stylesheet" href="css/reviews.css">
+	  <link rel="stylesheet" href="css/mystyle.css">
 	</head>
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-		<nav class="navbar navbar-inverse navbar-fixed-top">
+		<nav class="navbar navbar-default navbar-fixed-top">
 		  <div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -125,59 +23,492 @@
 				  <span class="icon-bar"></span>
 				  <span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand" href="#">WebSiteName</a>
+			  <a class="navbar-brand" href="#"><span id='phillips'>Phillips </span><span>DINER</span></a>
 			</div>
 			<div>
 			  <div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
 				  <li><a href="#section1">Section 1</a></li>
-				  <li><a href="#section2">Section 2</a></li>
-				  <li><a href="#section3">Section 3</a></li>
-				  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
+				  <li><a href="#section2">Reviews</a></li>
+				  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Menu <span class="caret"></span></a>
 					<ul class="dropdown-menu">
-					  <li><a href="#section41">Section 4-1</a></li>
-					  <li><a href="#section42">Section 4-2</a></li>
+					  <li><a href="#section3-1">Breakfast</a></li>
+					  <li><a href="#section3-4">Sandwiches</a></li>
 					</ul>
 				  </li>
+				  <li><a href="#footer">Contact</a></li>
 				</ul>
 			  </div>
 			</div>
 		  </div>
 		</nav>
 
-		<div id="section1" class="container-fluid pageSection">
+		<div id="section1" class=" container-fluid pageSection">
 			<!--video bg format and styling from http://slicejack.com/fullscreen-html5-video-background-css/ -->
 			<div class="fullscreen-bg">
-				<video loop="loop" autoplay="autoplay" class="fullscreen-bg__video">
-					<source src="../video/you_reposted.mp4" type="video/mp4"> <!-- https://www.youtube.com/watch?v=pxIofYrt0kE -->
-				</video>
+				<div class="carousel-container">
+				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+					<!-- Carousel items -->
+					<div class="carousel-inner carousel-zoom">
+						<div class="active item">
+						<img class="img-responsive" src="https://images.unsplash.com/photo-1419064642531-e575728395f2?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200">
+						</div>
+						<div class="item">
+						<img class="img-responsive" src="https://images.unsplash.com/photo-1445280471656-618bf9abcfe0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200">
+						</div>
+						<div class="item">
+						<img class="img-responsive" src="https://images.unsplash.com/photo-1445462657202-a0893228a1e1?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200">
+						</div>
+					   </div>
+					<!-- Carousel nav -->
+					<a class="carousel-control left" href="#carousel" data-slide="prev">‹</a>
+					<a class="carousel-control right" href="#carousel" data-slide="next">›</a>
+				</div>
+				</div>
 			</div>
-			<div class='video-bg-content'>
+			<div class='col-xs-12 col-md-8 video-bg-content'>
 				<h1>Section 1</h1>
 				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
 			</div>
 		</div>
-		<div id="section2" class="container-fluid pageSection">
-			<h1>Section 2</h1>
-			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-			<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		<div id="section2" class=" container-fluid pageSection">
+			<div class="container">
+				<div class="row">
+					<h2>Online Reviews</h2>
+				</div>
+			</div>
+				<div class="container">
+					<div class="row">
+						<div id="carousel-reviews" class="carousel slide" data-ride="carousel">	
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="col-md-4 col-sm-6 review-container">
+								<div class="block-text rel zmin">
+									<a class= "review-title" title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r433399154-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">"Not For Counting Calories!!”</a>
+									<div class="mark">My rating: <span class="rating-input"><sp1anan data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star-empty"></span>  </span></div>
+									<p>Excellent diner style food, generous helpings and delicious fish and chips!! Old style diner takes you back in time when sock hops and 45's were popular. The waitstaff was polite, friendly and efficient. Serving sizes were very generous, two can share a platter easily. Great prices, great diner atmosphere.</p>
+									<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+								</div>
+								<div class="person-text rel">
+										<div id ="review1" class="review-profile-image"></div>
+										<a title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r433399154-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">sylvarstarwolfe2015 - TripAdvisor</a>
+										<i>September 2016</i>
+								</div>
+							</div>
+								<div class="col-md-4 col-sm-6 hidden-xs review-container">
+									<div class="block-text rel zmin">
+										<a class= "review-title" title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r431674897-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">“Always a good ... meal.”</a>
+										<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span>  </span></div>
+										<p>The food and friendly small-town atmosphere are great. The prices are very affordable. Dinner, including dessert and a coke, all for $13.00. A lot of landmark old diners decline but try to survive on their long time in business and name. Phillips doesn't do that, they make sure the food is still good. Small space, but always clean comfortable.</p>
+										<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+									</div>
+									<div class="person-text rel">
+										<div id ="review2" class="review-profile-image"></div>
+										<a title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r431674897-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">James M - TripAdvisor</a>
+										<i>October 2016</i>
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-6 hidden-sm hidden-xs review-container">
+									<div class="block-text rel zmin">
+										<a class= "review-title" title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r429220989-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">“Family Diner”</a>
+										<div class="mark">My rating: <span class="rating-input"><span data-value="0" class="glyphicon glyphicon-star"></span><span data-value="1" class="glyphicon glyphicon-star"></span><span data-value="2" class="glyphicon glyphicon-star"></span><span data-value="3" class="glyphicon glyphicon-star"></span><span data-value="4" class="glyphicon glyphicon-star"></span><span data-value="5" class="glyphicon glyphicon-star"></span>  </span></div>
+										<p>Great place to eat breakfast, lunch or dinner. Homey atmosphere. Great food choices. Very affordable. Fast and efficient service.</p>
+										<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+									</div>
+									<div class="person-text rel">
+										<div id ="review3" class="review-profile-image"></div>
+										<a title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r429220989-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">sbd123happytraveler - TripAdvisor</a>
+										<i>October 2016</i>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<br/><br/>
+								<div class="col-md-4 col-sm-6 review-container yelp-container">
+								<div class="block-text rel zmin">
+									<span class="yelp-review" data-review-id="nFKeuAzbA3xtn24YpSthcg" data-hostname="www.yelp.com">Read 
+										<a href="https://www.yelp.com/user_details?userid=w0GUDmluyPeHyECRNWxbdg" rel="nofollow noopener">Tom O.</a>'s 
+										<a href="https://www.yelp.com/biz/phillips-diner-ogdensburg?hrid=nFKeuAzbA3xtn24YpSthcg" rel="nofollow noopener">review</a> of 
+										<a href="https://www.yelp.com/biz/VbSZQCN3RZ4tFmPCA8VndQ" rel="nofollow noopener">Phillips Diner</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+										<script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+									</span>
+								</div>
+								</div>
+								<div class="col-md-4 col-sm-6 hidden-xs review-container yelp-container">
+								<div class="block-text rel zmin">
+									<span class="yelp-review" data-review-id="5X0NoCKI0G2X4uHYMBb3jg" data-hostname="www.yelp.com">Read 
+										<a href="https://www.yelp.com/user_details?userid=WLfQX3LHQxGkLK0brMeTcg" rel="nofollow noopener">Jim O.</a>'s 
+										<a href="https://www.yelp.com/biz/phillips-diner-ogdensburg?hrid=5X0NoCKI0G2X4uHYMBb3jg" rel="nofollow noopener">review</a> of 
+										<a href="https://www.yelp.com/biz/VbSZQCN3RZ4tFmPCA8VndQ" rel="nofollow noopener">Phillips Diner</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+										<script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+									</span>
+								</div>
+								</div>
+								<div class="col-md-4 col-sm-6 hidden-sm hidden-xs review-container yelp-container">
+								<div class="block-text rel zmin">
+									<span class="yelp-review" data-review-id="FdCgLXlHTF5YDGf3F8b4RQ" data-hostname="www.yelp.com">Read 
+										<a href="https://www.yelp.com/user_details?userid=LgFk4rRbklgJomo64z8dIA" rel="nofollow noopener">Denise A.</a>'s 
+										<a href="https://www.yelp.com/biz/phillips-diner-ogdensburg?hrid=FdCgLXlHTF5YDGf3F8b4RQ" rel="nofollow noopener">review</a> of 
+										<a href="https://www.yelp.com/biz/VbSZQCN3RZ4tFmPCA8VndQ" rel="nofollow noopener">Phillips Diner</a> on <a href="https://www.yelp.com" rel="nofollow noopener">Yelp</a>
+										<script async="async" src="https://www.yelp.com/embed/widgets.js" type="text/javascript"></script>
+									</span>
+								</div>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#carousel-reviews" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<a class="right carousel-control" href="#carousel-reviews" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div id="section3" class="container-fluid pageSection">
-		  <h1>Section 3</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		<div id="section3-1" class="container-fluid pageSection menu-item ">
+			<div class="col-xs-12 menu-item-container"> <h1>Eggs and Omelettes</h1> </div>
+			<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">One Egg</h2><h2 class="price">$3.85</h2>
+						</div>
+						<p>Any style, with toast and coffee.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Two Eggs</h2><h2 class="price">$4.15</h2>
+						</div>
+						<p>Any style, with toast and coffee.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Two Eggs</h2><h2 class="price">$5.99</h2>
+						</div>
+						<p>With choice of ham, bacon, or sausage; toast and coffee</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Plain Omelette</h2><h2 class="price">$5.25</h2>
+						</div>
+						<p>With toast and coffee.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Cheese Omelette</h2><h2 class="price">$5.80</h2>
+						</div>
+						<p>With toast and coffee.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Ham and Cheese Omelette</h2><h2 class="price">$6.35</h2>
+						</div>
+						<p>With toast and coffee.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Garbage Omelette</h2><h2 class="price">$7.15</h2>
+						</div>
+						<p>Everything but the sink!</p>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<div id="section41" class="container-fluid pageSection">
-		  <h1>Section 4 Submenu 1</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		<div id="section3-2" class=" container-fluid pageSection menu-item">
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h1 class="item">Pancakes</h1>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Short Stack - 2</h2><h2 class="price">$4.70</h2>
+						</div>
+						<div class='item-head'>
+							<p class="item">with Blueberries</p><p class="price">$5.25</p>
+						</div>
+						<div class='item-head'>
+							<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Tall Stack - 3</h2><h2 class="price">$5.50</h2>
+						</div>
+						<div class='item-head'>
+							<p class="item">with Blueberries</p><p class="price">$5.80</p>
+						</div>
+						<div class='item-head'>
+							<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h1 class="item">French Toast</h1>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Texas Two Step</h2><h2 class="price">$4.35</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Tall Texan - 3</h2><h2 class="price">$5.45</h2>
+						</div>
+						<div class='item-head'>
+							<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
+						</div></li>
+			</ul>
+			</div>
 		</div>
-		<div id="section42" class="container-fluid pageSection">
-		  <h1>Section 4 Submenu 2</h1>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-		  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+		<div id="section3-3" class="container-fluid pageSection menu-item ">
+			<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+				<ul>
+					<li>
+						<h1>Cereal</h1>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Cold Cereal</h2><h2 class="price">$2.20</h2>
+						</div>
+						<p>With milk.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Hot Oatmeal</h2><h2 class="price">$2.20</h2>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<h1>Meals</h1>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Sausage and Biscuits</h2><h2 class="price">$4.95</h2>
+						</div>
+						<p>With gravy.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Hash and 1 Egg</h2><h2 class="price">$4.95</h2>
+						</div>
+						<p>With toast and coffee.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Phillimuffin</h2><h2 class="price">$4.95</h2>
+						</div>
+						<p>English muffin with egg, cheese and sausage.</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">14oz. Ribeye Steak</h2><h2 class="price">$12.99</h2>
+						</div>
+						<p>With 2 eggs, homefries, toast and coffee.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<h1>Sides</h1>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Buttery Hot Toast</h2><h2 class="price">$1.10</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Toasted English Muffins</h2><h2 class="price">$1.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Doughnuts</h2><h2 class="price">$1.10</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Muffins</h2><h2 class="price">$1.95</h2>
+						</div>
+						<p>Blueberry, Banana Nut, or Bran</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Bagels</h2><h2 class="price">$1.95</h2>
+						</div>
+						<p>Plain or Cinnamon Raisin</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Ham, Bacon, or Sausage</h2><h2 class="price">$3.10</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Home Fries</h2><h2 class="price">$2.20</h2>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
+		<div id="section3-4" class="container-fluid pageSection menu-item ">
+			<div class="col-xs-12 menu-item-container"> <h1>Sandwiches</h1> </div>
+			<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Plain Hamburger</h2><h2 class="price">$3.99</h2>
+						</div>
+						<div class='item-head'>
+							<p class="item">Texas Style</p><p class="price">$4.70</p>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Cheeseburger</h2><h2 class="price">$4.40</h2>
+						</div>
+						<div class='item-head'>
+							<p class="item">Texas Style</p><p class="price">$4.95</p>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Fish Burger</h2><h2 class="price">$4.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Chicken Burger</h2><h2 class="price">$4.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Hot Dog</h2><h2 class="price">$2.75</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Texas Hot</h2><h2 class="price">$3.30</h2>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Tuna Salad</h2><h2 class="price">$3.30</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Fried Egg</h2><h2 class="price">$2.75</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Egg and Olive</h2><h2 class="price">$3.30</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Western</h2><h2 class="price">$4.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Eastern</h2><h2 class="price">$4.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Grilled Cheese</h2><h2 class="price">$2.75</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Bar-B-Q</h2><h2 class="price">$4.40</h2>
+						</div>
+						<div class='item-head'>
+							<p>Beef, Pork, or Ham</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-md-4 menu-item-container">
+				<ul>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">BLT</h2><h2 class="price">$4.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Corned Beef</h2><h2 class="price">$4.40</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Cold Cuts</h2><h2 class="price">$4.15</h2>
+						</div>
+						<div class='item-head'>
+							<p>Beef, Pork, Turkey, or Ham</p>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Ham and Cheese</h2><h2 class="price">$4.35</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Cold Meat Loaf</h2><h2 class="price">$4.35</h2>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer id="footer" class="container-fluid pageSection menu-item">
+			<div>
+				<h1>Contact Us</h1>
+				<hr/>
+				<div class="col-xs-12 col-md-4">
+					<h2>Address</h2>
+					<p>415 Ford St.<br/>
+					Ogdensburg, NY</p>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<h2>Social Media</h2>
+					<p>facebook link</p>
+				</div>
+				<div class="col-xs-12 col-md-4">
+					<h2>Phone</h2>
+					<p>315-393-9738</p>
+				</div>
+			</div>
+		</footer>
 
 		<script> <!--Taken from W3Schools-->
 		// Add scrollspy to <body>
