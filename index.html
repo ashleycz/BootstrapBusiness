@@ -6,7 +6,7 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="shortcut icon" href="pics/vector.png" />
 	  <link rel="stylesheet" type="text/css" href="css/content-tools.min.css">
-	  <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Kaushan+Script|Leckerli+One|Marck+Script|Mr+Dafoe|Norican|Pacifico|Satisfy" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -23,7 +23,7 @@
 				  <span class="icon-bar"></span>
 				  <span class="icon-bar"></span>
 			  </button>
-			  <a class="navbar-brand" href="#"><span id='phillips'>Phillips </span><span>DINER</span></a>
+			  <a class="navbar-brand" href="#section1"><span id='phillips'>Phillips </span><span>DINER</span></a>
 			</div>
 			<div>
 			  <div class="collapse navbar-collapse" id="myNavbar">
@@ -34,6 +34,8 @@
 					<ul class="dropdown-menu">
 					  <li><a href="#section3-1">Breakfast</a></li>
 					  <li><a href="#section3-4">Sandwiches</a></li>
+					  <li><a href="#section3-6">Meals</a></li>
+					  <li><a href="#section3-9">Sides/Drinks</a></li>
 					</ul>
 				  </li>
 				  <li><a href="#footer">Contact</a></li>
@@ -46,18 +48,21 @@
 		<div id="section1" class=" container-fluid pageSection">
 			<!--video bg format and styling from http://slicejack.com/fullscreen-html5-video-background-css/ -->
 			<div class="fullscreen-bg">
+				<!--<video loop="loop" muted autoplay="autoplay" class="fullscreen-bg__video">
+					<source src="video/you_reposted.mp4" type="video/mp4"> <!-- https://www.youtube.com/watch?v=pxIofYrt0kE 
+				</video>-->
 				<div class="carousel-container">
 				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 					<!-- Carousel items -->
 					<div class="carousel-inner carousel-zoom">
 						<div class="active item">
-						<img class="img-responsive" src="https://images.unsplash.com/photo-1419064642531-e575728395f2?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200">
+						<img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/555172_531067370249928_723902552_n.jpg?oh=f2405706a38b1c8294b6b1ab5b441a98&oe=58C0A79B">
 						</div>
 						<div class="item">
-						<img class="img-responsive" src="https://images.unsplash.com/photo-1445280471656-618bf9abcfe0?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200">
+						<img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/149940_522475591109106_861757982_n.jpg?oh=3339b4dd75a33aed0dc5e781f37bbffa&oe=58CC9116">
 						</div>
 						<div class="item">
-						<img class="img-responsive" src="https://images.unsplash.com/photo-1445462657202-a0893228a1e1?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1200">
+						<img class="img-responsive" src="https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/430339_357822004241133_1455214449_n.jpg?oh=32161043cbf6b198471a8cf6a0f57c5c&oe=58FBC50B">
 						</div>
 					   </div>
 					<!-- Carousel nav -->
@@ -67,12 +72,10 @@
 				</div>
 			</div>
 			<div class='col-xs-12 col-md-8 video-bg-content'>
-				<h1>Section 1</h1>
-				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-				<p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+				<h1><span class='phillips'>Phillips </span><span>DINER</span></h1>
 			</div>
 		</div>
-		<div id="section2" class=" container-fluid pageSection">
+		<div id="section2" class="container-fluid pageSection">
 			<div class="container">
 				<div class="row">
 					<h2>Online Reviews</h2>
@@ -92,7 +95,7 @@
 								</div>
 								<div class="person-text rel">
 										<div id ="review1" class="review-profile-image"></div>
-										<a title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r433399154-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">sylvarstarwolfe2015 - TripAdvisor</a>
+										<a title="" target="_blank" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r433399154-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">sylvarstarwolfe2015 - TripAdvisor</a>
 										<i>September 2016</i>
 								</div>
 							</div>
@@ -105,7 +108,7 @@
 									</div>
 									<div class="person-text rel">
 										<div id ="review2" class="review-profile-image"></div>
-										<a title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r431674897-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">James M - TripAdvisor</a>
+										<a title="" target="_blank" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r431674897-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">James M - TripAdvisor</a>
 										<i>October 2016</i>
 									</div>
 								</div>
@@ -118,7 +121,7 @@
 									</div>
 									<div class="person-text rel">
 										<div id ="review3" class="review-profile-image"></div>
-										<a title="" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r429220989-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">sbd123happytraveler - TripAdvisor</a>
+										<a title="" target="_blank" href="https://www.tripadvisor.com/ShowUserReviews-g48320-d2431384-r429220989-Phillips_Diner-Ogdensburg_St_Lawrence_County_New_York.html#REVIEWS">sbd123happytraveler - TripAdvisor</a>
 										<i>October 2016</i>
 									</div>
 								</div>
@@ -167,328 +170,824 @@
 				</div>
 			</div>
 		</div>
-		<div id="section3-1" class="container-fluid pageSection menu-item ">
-			<div class="col-xs-12 menu-item-container"> <h1>Eggs and Omelettes</h1> </div>
-			<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+		<div id="menu-background">
+		<div id='menu-container'>
+			<div id="section3-1" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 menu-item-container"> <h1>Eggs and Omelettes</h1> </div>
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">One Egg</h2><h2 class="price">$3.85</h2>
+							</div>
+							<p>Any style, with toast and coffee.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Two Eggs</h2><h2 class="price">$4.15</h2>
+							</div>
+							<p>Any style, with toast and coffee.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Two Eggs</h2><h2 class="price">$5.99</h2>
+							</div>
+							<p>With choice of ham, bacon, or sausage; toast and coffee</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Plain Omelette</h2><h2 class="price">$5.25</h2>
+							</div>
+							<p>With toast and coffee.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cheese Omelette</h2><h2 class="price">$5.80</h2>
+							</div>
+							<p>With toast and coffee.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Ham and Cheese Omelette</h2><h2 class="price">$6.35</h2>
+							</div>
+							<p>With toast and coffee.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Garbage Omelette</h2><h2 class="price">$7.15</h2>
+							</div>
+							<p>Everything but the sink!</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-2" class="container-fluid pageSection menu-item">
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h1 class="item">Pancakes</h1>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Short Stack - 2</h2><h2 class="price">$4.70</h2>
+							</div>
+							<div class='item-head'>
+								<p class="item">with Blueberries</p><p class="price">$5.25</p>
+							</div>
+							<div class='item-head'>
+								<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Tall Stack - 3</h2><h2 class="price">$5.50</h2>
+							</div>
+							<div class='item-head'>
+								<p class="item">with Blueberries</p><p class="price">$5.80</p>
+							</div>
+							<div class='item-head'>
+								<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h1 class="item">French Toast</h1>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Texas Two Step</h2><h2 class="price">$4.35</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Tall Texan - 3</h2><h2 class="price">$5.45</h2>
+							</div>
+							<div class='item-head'>
+								<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
+							</div></li>
+				</ul>
+				</div>
+			</div>
+			<div id="section3-3" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<h1>Cereal</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cold Cereal</h2><h2 class="price">$2.20</h2>
+							</div>
+							<p>With milk.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Oatmeal</h2><h2 class="price">$2.20</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Meals</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Sausage and Biscuits</h2><h2 class="price">$4.95</h2>
+							</div>
+							<p>With gravy.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hash and 1 Egg</h2><h2 class="price">$4.95</h2>
+							</div>
+							<p>With toast and coffee.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Phillimuffin</h2><h2 class="price">$4.95</h2>
+							</div>
+							<p>English muffin with egg, cheese and sausage.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">14oz. Ribeye Steak</h2><h2 class="price">$12.99</h2>
+							</div>
+							<p>With 2 eggs, homefries, toast and coffee.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Sides</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Buttery Hot Toast</h2><h2 class="price">$1.10</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Toasted English Muffins</h2><h2 class="price">$1.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Doughnuts</h2><h2 class="price">$1.10</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Muffins</h2><h2 class="price">$1.95</h2>
+							</div>
+							<p>Blueberry, Banana Nut, or Bran</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Bagels</h2><h2 class="price">$1.95</h2>
+							</div>
+							<p>Plain or Cinnamon Raisin</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Ham, Bacon, or Sausage</h2><h2 class="price">$3.10</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Home Fries</h2><h2 class="price">$2.20</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-4" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 menu-item-container"> <h1>Sandwiches</h1> </div>
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Plain Hamburger</h2><h2 class="price">$3.99</h2>
+							</div>
+							<div class='item-head'>
+								<p class="item">Texas Style</p><p class="price">$4.70</p>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cheeseburger</h2><h2 class="price">$4.40</h2>
+							</div>
+							<div class='item-head'>
+								<p class="item">Texas Style</p><p class="price">$4.95</p>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Fish Burger</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Chicken Burger</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Dog</h2><h2 class="price">$2.75</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Texas Hot</h2><h2 class="price">$3.30</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Tuna Salad</h2><h2 class="price">$3.30</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Fried Egg</h2><h2 class="price">$2.75</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Egg and Olive</h2><h2 class="price">$3.30</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Western</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Eastern</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Grilled Cheese</h2><h2 class="price">$2.75</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Bar-B-Q</h2><h2 class="price">$4.40</h2>
+							</div>
+							<div class='item-head'>
+								<p>Beef, Pork, or Ham</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">BLT</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Corned Beef</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cold Cuts</h2><h2 class="price">$4.15</h2>
+							</div>
+							<div class='item-head'>
+								<p>Beef, Pork, Turkey, or Ham</p>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Ham and Cheese</h2><h2 class="price">$4.35</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cold Meat Loaf</h2><h2 class="price">$4.35</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-5" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<h1>Hot Sandwiches</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Turkey</h2><h2 class="price">$6.50</h2>
+							</div>
+							<p>Cranberry sauce, macaroni salad, potato and gravy.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Beef, Pork, and Ham</h2><h2 class="price">$6.50</h2>
+							</div>
+							<p>With potato, gravy, and macaroni salad.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Hamburger</h2><h2 class="price">$6.50</h2>
+							</div>
+							<p>With potato, gravy, and macaroni salad.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Meatloaf</h2><h2 class="price">$6.50</h2>
+							</div>
+							<p>With potato, gravy, and macaroni salad.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Salads</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Tossed Salad</h2><h2 class="price">$3.25</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Julienne Salad</h2><h2 class="price">$5.50</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Grilled Chicken Salad</h2><h2 class="price">$6.90</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Taco Salad</h2><h2 class="price">$6.60</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Specials</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Chicken Strips</h2><h2 class="price">$5.50</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cold Plate</h2><h2 class="price">$5.50</h2>
+							</div>
+							<p>served with turkey, ham, macaroni, salad, hard boiled egg, lettuce, tomato slices and cheese with roll</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Hoagies</h2><h2 class="price">$6.60</h2>
+							</div>
+							<p>Turkey, Ham, Beef, or Haddock</p>
+							<p>served with cheese, lettuce, tomato and mayo, french fries and macaroni salad</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-6" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 menu-item-container"> <h1>Classics</h1> </div>
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hamburger Deluxe</h2><h2 class="price">$6.50</h2>
+							</div>
+							<p>Served with lettuce, tomato, onion, mayo and french fries.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cheeseburger Deluxe</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with lettuce, tomato, onion, mayo and french fries.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Bacon Cheeseburger Deluxe</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with lettuce, tomato, onion, mayo and french fries.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Boom Boom Deluxe</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with french fries.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Chicken Burger Deluxe</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with french fries and coleslaw.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Reuben on Rye</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Corned beef, sauerkraut, cheese, Russian dressing, with french fries.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Toasted Three-Decker Club</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with french fries.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Joseppi Steak'n'Cheese Sandwich</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with onions, peppers, mayo and french fries.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Meatball Supreme</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>Served with mushrooms, onions, peppers, and french fries.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-7" class="container-fluid pageSection menu-item">
+				<div class="col-xs-12 menu-item-container"> <h1>Homestyle Dinners</h1><p>Served with tossed salad, potato, roll and butter.</p> </div>
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Baked Meatloaf</h2><h2 class="price">$9.90</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Liver, Bacon, and Onions</h2><h2 class="price">$9.90</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hamburger Steak</h2><h2 class="price">$9.90</h2>
+							</div>
+							<p>With mushrooms and onions.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Southern Fried Chicken</h2><h2 class="price">$9.90</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Roast Turkey</h2><h2 class="price">$9.90</h2>
+							</div>
+							<p>With stuffing and cranberry sauce.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Roast Pork</h2><h2 class="price">$9.90</h2>
+							</div>
+							<p>With stuffing and applesauce.</p>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Roast Sirloin or Beef</h2><h2 class="price">$9.90</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Ham Steak</h2><h2 class="price">$9.90</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Grilled Pork Chops</h2><h2 class="price">$9.90</h2>
+							</div>
+							<p>With stuffing and applesauce.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-8" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<h1>Seafood</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Fish Fry</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>With potato, coleslaw, roll and butter.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Deep Fried Clams</h2><h2 class="price">$8.55</h2>
+							</div>
+							<p>With potato, coleslaw, roll and butter.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Deep Fried Shrimp</h2><h2 class="price">$9.90</h2>
+							</div>
+							<p>With potato, salad, roll and butter.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Filet of Haddock</h2><h2 class="price">$9.90</h2>
+							</div>
+							<p>With potato, salad, roll and butter.</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Italian Dishes</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Small Spaghetti</h2><h2 class="price">$5.99</h2>
+							</div>
+							<p>With meatballs.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Spaghetti</h2><h2 class="price">$8.75</h2>
+							</div>
+							<p class='item'>With meatballs or sweet sausage and tossed salad.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Meatball Sandwich</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>With french fries.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Hot Sausage Sandwich</h2><h2 class="price">$6.99</h2>
+							</div>
+							<p>With french fries.</p>
+						</li>
+						
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>The Great Steaks</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Great Steak</h2><h2 class="price">$12.99</h2>
+							</div>
+							<p>14 oz. rib eye on toast with french fries and tossed salad</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Spaghetti Sizzler</h2><h2 class="price">$12.99</h2>
+							</div>
+							<p>14 oz. rib eye with side of spaghetti, Italian bread and tossed salad</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-9" class="container-fluid pageSection menu-item ">
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Hot Soup</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Soup of the Day</h2>
+							</div>
+							<div class='item-head'>
+								<p class='item'>Cup</p><p class='price'>$2.20</p>
+							</div>
+							<div class='item-head'>
+								<p class='item'>Bowl</p><p class='price'>$2.75</p>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Homemade Mexican Chile</h2>
+							</div>
+							<div class='item-head'>
+								<p class='item'>Cup</p><p class='price'>$3.30</p>
+							</div>
+							<div class='item-head'>
+								<p class='item'>Bowl</p><p class='price'>$3.85</p>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item title" >New England Clam Chowder </h2>
+							</div>
+							<div class='item-head'>
+								<p class='item'>Cup</p><p class='price'>$2.20</p>
+							</div>
+							<div class='item-head'>
+								<p class='item'>Bowl</p><p class='price'>$2.75</p>
+							</div>
+							<p>*Friday Only*</p>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 menu-item-container">
+					<ul>
+						<li>
+							<h1>Sides</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Potato or Macaroni Salad</h2><h2 class="price">$1.65</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Crumbled Bleu Cheese</h2><h2 class="price">$0.85</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Poutine</h2><h2 class="price">$3.30</h2>
+							</div>
+							<p>French fries with cheese and gravy.</p>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Onion Rings</h2><h2 class="price">$3.30</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Coleslaw</h2><h2 class="price">$1.65</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Cottage Cheese</h2><h2 class="price">$1.65</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">French Fries</h2><h2 class="price">$2.20</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
+					<ul>
+						<li>
+							<h1>Desserts</h1>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Mile High Pie</h2><h2 class="price">$3.25</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">A La Mode</h2><h2 class="price">$4.40</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Rice Pudding</h2><h2 class="price">$3.25</h2>
+							</div>
+						</li>
+						<li>
+							<div class='item-head'>
+								<h2 class="item">Strawberry Shortcake</h2><h2 class="price">$4.25</h2>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="section3-10" class="container-fluid pageSection menu-item ">
+			<div class="col-xs-12 col-md-6 menu-item-container">
 				<ul>
 					<li>
-						<div class='item-head'>
-							<h2 class="item">One Egg</h2><h2 class="price">$3.85</h2>
-						</div>
-						<p>Any style, with toast and coffee.</p>
+						<h1 style='text-align:center'>Deli Counter</h1>
 					</li>
 					<li>
 						<div class='item-head'>
-							<h2 class="item">Two Eggs</h2><h2 class="price">$4.15</h2>
+							<h2 class="item">Ham</h2><h2 class="price">$4.95/lb</h2>
 						</div>
-						<p>Any style, with toast and coffee.</p>
 					</li>
 					<li>
 						<div class='item-head'>
-							<h2 class="item">Two Eggs</h2><h2 class="price">$5.99</h2>
+							<h2 class="item">Turkey</h2><h2 class="price">$5.99/lb</h2>
 						</div>
-						<p>With choice of ham, bacon, or sausage; toast and coffee</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Potato Salad</h2><h2 class="price">$3.30/lb</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Macaroni Salad</h2><h2 class="price">$3.30/lb</h2>
+						</div>
 					</li>
 				</ul>
 			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
+			<div class="col-xs-12 col-md-6 menu-item-container">
 				<ul>
 					<li>
-						<div class='item-head'>
-							<h2 class="item">Plain Omelette</h2><h2 class="price">$5.25</h2>
-						</div>
-						<p>With toast and coffee.</p>
+						<h1>Beverages</h1>
 					</li>
 					<li>
 						<div class='item-head'>
-							<h2 class="item">Cheese Omelette</h2><h2 class="price">$5.80</h2>
+							<h2 class="item">Coffee or Tea</h2><h2 class="price">$1.10</h2>
 						</div>
-						<p>With toast and coffee.</p>
 					</li>
 					<li>
 						<div class='item-head'>
-							<h2 class="item">Ham and Cheese Omelette</h2><h2 class="price">$6.35</h2>
+							<h2 class="item">Juice</h2><h2 class="price">$1.95</h2>
 						</div>
-						<p>With toast and coffee.</p>
 					</li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
 					<li>
 						<div class='item-head'>
-							<h2 class="item">Garbage Omelette</h2><h2 class="price">$7.15</h2>
+							<h2 class="item">Milk</h2><h2 class="price">$1.95</h2>
 						</div>
-						<p>Everything but the sink!</p>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Chocolate Milk</h2><h2 class="price">$1.95</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Iced Tea</h2><h2 class="price">$2.20</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Lemonade</h2><h2 class="price">$2.20</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Soda</h2><h2 class="price">$2.20</h2>
+						</div>
+					</li>
+					<li>
+						<div class='item-head'>
+							<h2 class="item">Milkshakes</h2><h2 class="price">$4.40</h2>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div id="section3-2" class=" container-fluid pageSection menu-item">
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
-					<li>
-						<div class='item-head'>
-							<h1 class="item">Pancakes</h1>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Short Stack - 2</h2><h2 class="price">$4.70</h2>
-						</div>
-						<div class='item-head'>
-							<p class="item">with Blueberries</p><p class="price">$5.25</p>
-						</div>
-						<div class='item-head'>
-							<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Tall Stack - 3</h2><h2 class="price">$5.50</h2>
-						</div>
-						<div class='item-head'>
-							<p class="item">with Blueberries</p><p class="price">$5.80</p>
-						</div>
-						<div class='item-head'>
-							<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
-					<li>
-						<div class='item-head'>
-							<h1 class="item">French Toast</h1>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Texas Two Step</h2><h2 class="price">$4.35</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Tall Texan - 3</h2><h2 class="price">$5.45</h2>
-						</div>
-						<div class='item-head'>
-							<p class="item">with ham, bacon or sausage</p><p class="price">+$2.20</p>
-						</div></li>
-			</ul>
-			</div>
 		</div>
-		<div id="section3-3" class="container-fluid pageSection menu-item ">
-			<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
-				<ul>
-					<li>
-						<h1>Cereal</h1>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Cold Cereal</h2><h2 class="price">$2.20</h2>
-						</div>
-						<p>With milk.</p>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Hot Oatmeal</h2><h2 class="price">$2.20</h2>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
-					<li>
-						<h1>Meals</h1>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Sausage and Biscuits</h2><h2 class="price">$4.95</h2>
-						</div>
-						<p>With gravy.</p>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Hash and 1 Egg</h2><h2 class="price">$4.95</h2>
-						</div>
-						<p>With toast and coffee.</p>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Phillimuffin</h2><h2 class="price">$4.95</h2>
-						</div>
-						<p>English muffin with egg, cheese and sausage.</p>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">14oz. Ribeye Steak</h2><h2 class="price">$12.99</h2>
-						</div>
-						<p>With 2 eggs, homefries, toast and coffee.</p>
-					</li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
-					<li>
-						<h1>Sides</h1>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Buttery Hot Toast</h2><h2 class="price">$1.10</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Toasted English Muffins</h2><h2 class="price">$1.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Doughnuts</h2><h2 class="price">$1.10</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Muffins</h2><h2 class="price">$1.95</h2>
-						</div>
-						<p>Blueberry, Banana Nut, or Bran</p>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Bagels</h2><h2 class="price">$1.95</h2>
-						</div>
-						<p>Plain or Cinnamon Raisin</p>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Ham, Bacon, or Sausage</h2><h2 class="price">$3.10</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Home Fries</h2><h2 class="price">$2.20</h2>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div id="section3-4" class="container-fluid pageSection menu-item ">
-			<div class="col-xs-12 menu-item-container"> <h1>Sandwiches</h1> </div>
-			<div class="col-xs-12 col-md-4 col-xl-2 menu-item-container">
-				<ul>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Plain Hamburger</h2><h2 class="price">$3.99</h2>
-						</div>
-						<div class='item-head'>
-							<p class="item">Texas Style</p><p class="price">$4.70</p>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Cheeseburger</h2><h2 class="price">$4.40</h2>
-						</div>
-						<div class='item-head'>
-							<p class="item">Texas Style</p><p class="price">$4.95</p>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Fish Burger</h2><h2 class="price">$4.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Chicken Burger</h2><h2 class="price">$4.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Hot Dog</h2><h2 class="price">$2.75</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Texas Hot</h2><h2 class="price">$3.30</h2>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Tuna Salad</h2><h2 class="price">$3.30</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Fried Egg</h2><h2 class="price">$2.75</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Egg and Olive</h2><h2 class="price">$3.30</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Western</h2><h2 class="price">$4.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Eastern</h2><h2 class="price">$4.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Grilled Cheese</h2><h2 class="price">$2.75</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Bar-B-Q</h2><h2 class="price">$4.40</h2>
-						</div>
-						<div class='item-head'>
-							<p>Beef, Pork, or Ham</p>
-						</div>
-					</li>
-				</ul>
-			</div>
-			<div class="col-xs-12 col-md-4 menu-item-container">
-				<ul>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">BLT</h2><h2 class="price">$4.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Corned Beef</h2><h2 class="price">$4.40</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Cold Cuts</h2><h2 class="price">$4.15</h2>
-						</div>
-						<div class='item-head'>
-							<p>Beef, Pork, Turkey, or Ham</p>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Ham and Cheese</h2><h2 class="price">$4.35</h2>
-						</div>
-					</li>
-					<li>
-						<div class='item-head'>
-							<h2 class="item">Cold Meat Loaf</h2><h2 class="price">$4.35</h2>
-						</div>
-					</li>
-				</ul>
-			</div>
 		</div>
 		<footer id="footer" class="container-fluid pageSection menu-item">
 			<div>
@@ -496,26 +995,52 @@
 				<hr/>
 				<div class="col-xs-12 col-md-4">
 					<h2>Address</h2>
-					<p>415 Ford St.<br/>
-					Ogdensburg, NY</p>
+					<h3>415 Ford St.<br/>
+					Ogdensburg, NY</h3>
 				</div>
 				<div class="col-xs-12 col-md-4">
-					<h2>Social Media</h2>
-					<p>facebook link</p>
+					<!--<h2>Social Media</h2>-->
+					<h2><a href='https://www.facebook.com/Phillips-Diner-112363275453675/' target="_blank">Visit us on Facebook</a></h2>
 				</div>
 				<div class="col-xs-12 col-md-4">
 					<h2>Phone</h2>
-					<p>315-393-9738</p>
+					<h3>315-393-9738</h3>
 				</div>
 			</div>
 		</footer>
-
+		
 		<script> <!--Taken from W3Schools-->
 		// Add scrollspy to <body>
 		$('body').scrollspy({target: ".navbar", offset: 50});
 
 		// Add smooth scrolling on all links inside the navbar
 		$("#myNavbar a").on('click', function(event) {
+
+		  // Make sure this.hash has a value before overriding default behavior
+		  if (this.hash !== "") {
+
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+			  scrollTop: $(hash).offset().top
+			}, 800, function(){
+
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			  window.location.hash = hash;
+			});
+
+		  } // End if
+
+		});
+		
+		// Add smooth scrolling on all links inside the navbar
+		$("#navbar-brand").on('click', function(event) {
 
 		  // Make sure this.hash has a value before overriding default behavior
 		  if (this.hash !== "") {
